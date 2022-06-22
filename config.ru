@@ -6,6 +6,7 @@ begin
 
   use Rack::MethodOverride
 
+  use Rack::MethodOverride
   run ApplicationController
 rescue ActiveRecord::PendingMigrationError => err
   STDERR.puts err
